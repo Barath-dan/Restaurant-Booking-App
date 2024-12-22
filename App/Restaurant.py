@@ -150,8 +150,8 @@ elif choice == "👤Customer Login":
             email = st.text_input("Email")
             submit = st.form_submit_button("Add Customer")
             mobile_number_str = str(mobile_number)
-            if len(mobile_number_str) != 9:
-                st.error("Mobile Number must have exactly 9 digits.")
+            if len(mobile_number_str) != 10:
+                st.error("Mobile Number must have exactly 10 digits.")
             # Check if mobile_number is not provided (i.e., None or empty)
             if not mobile_number:
                 st.error("Mobile Number is required.")
