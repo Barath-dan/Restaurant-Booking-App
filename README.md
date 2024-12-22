@@ -1,6 +1,7 @@
 # Restaurant Table Booking Application
 
-## Application link:https://restaurant-booking-app-8hvqdyadcodamddrmvvvrx.streamlit.app/
+## Application link
+https://restaurant-booking-app-8hvqdyadcodamddrmvvvrx.streamlit.app/
 
 ## Overview  
 The Restaurant Table Booking Application Project is designed to streamline the operations of the Little Lemon restaurant, focusing on a robust and efficient table booking system. This project leverages:  
