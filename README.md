@@ -10,6 +10,18 @@ The Little Lemon Database Project is designed to streamline the operations of th
 
 ---
 
+![Customer registration](https://github.com/Barath-dan/Restaurant-Booking-App/blob/main/img/cst%20scs.png?raw=true)
+
+![Customer registration failed](https://github.com/Barath-dan/Restaurant-Booking-App/blob/main/img/cst.png?raw=true)
+
+![Table booking](https://github.com/Barath-dan/Restaurant-Booking-App/blob/main/img/tb%20scs.png?raw=true)
+
+![Table booking failed](https://github.com/Barath-dan/Restaurant-Booking-App/blob/main/img/tb.png?raw=true)
+
+![Update Booking](https://github.com/Barath-dan/Restaurant-Booking-App/blob/main/img/upd.png?raw=true)
+
+---
+
 ## Features  
 
 ### 1. Streamlit Integration  
