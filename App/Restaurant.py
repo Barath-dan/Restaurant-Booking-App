@@ -146,7 +146,7 @@ elif choice == "👤Customer Login":
             first_name = st.text_input("First Name")
             last_name = st.text_input("Last Name")
             age = st.number_input("Age", min_value=0, step=1)
-            mobile_number = st.number_input("Mobile Number", min_value=0, max_value=999999999)
+            mobile_number = st.number_input("Mobile Number", min_value=0, max_value=9999999999)
             email = st.text_input("Email")
             submit = st.form_submit_button("Add Customer")
             mobile_number_str = str(mobile_number)
