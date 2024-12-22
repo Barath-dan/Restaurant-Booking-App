@@ -3,7 +3,6 @@ import pymysql
 import pandas as pd
 import toml
 
-secrets = toml.load(r'C:\Users\Barath kumar\OneDrive\Desktop\Restaurant_Capstone\App\secrets.toml')
 # Database connection
 @st.cache_resource
 def init_connection():
