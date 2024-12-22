@@ -1,10 +1,8 @@
-# Little Lemon Database Project
+# Restaurant Table Booking Application
 
 ## Overview  
-The Little Lemon Database Project is designed to streamline the operations of the Little Lemon restaurant, focusing on a robust and efficient table booking system. This project leverages:  
+The Restaurant Table Booking Application Project is designed to streamline the operations of the Little Lemon restaurant, focusing on a robust and efficient table booking system. This project leverages:  
 - **Stored Procedures** for efficient database management.  
-- **Transactions** for data consistency.  
-- **Virtual Tables** for enhanced data visibility.  
 - **Streamlit Web Application** for a user-friendly interface.  
 - **Cloud Hosting** through **Aiven Cloud Services** for reliability and scalability.  
 
@@ -59,16 +57,6 @@ Utilizes MySQL stored procedures to optimize database operations and improve per
 - **Cancel Booking:** Remove bookings from the system.  
 - **Available Tables:** Check table availability for specific dates.  
 - **Check Booking:** Retrieve the booking status for a given date and table.  
-
----
-
-### 4. Virtual Tables  
-Provides summarized views of customer orders and booking details for improved data visibility and analysis.  
-
----
-
-### 5. Database Client  
-A Python-based client for interacting with the database, allowing seamless query execution and data retrieval.  
 
 ---
 
