@@ -149,29 +149,29 @@ elif choice == "👤Customer Login":
             mobile_number = st.number_input("Mobile Number", min_value=0, max_value=9999999999)
             email = st.text_input("Email")
             submit = st.form_submit_button("Add Customer")
-            mobile_number_str = str(mobile_number)
-            if len(mobile_number_str) != 10:
-                st.error("Mobile Number must have exactly 10 digits.")
-            # Check if mobile_number is not provided (i.e., None or empty)
-            if not mobile_number:
-                st.error("Mobile Number is required.")
-            elif submit:
-                try:
-                    # Execute stored procedure to add a new customer
-                    result = execute_stored_procedure("AddNewCustomer", (first_name, last_name, age, mobile_number, email))
-                    if result:
-                        if len(result[0]) == 2:  # New customer created
-                            new_customer_id, message = result[0]
-                            st.success(f"{message}. Your Customer ID is: {new_customer_id}")
-                        elif len(result[0]) == 1:  # Customer already exists
-                            message = result[0][0]
-                            st.error(message)
+            if submit:
+                mobile_number_str = str(mobile_number)
+                if len(mobile_number_str) != 10:
+                    st.error("Mobile Number must have exactly 10 digits.")
+                elif not mobile_number:
+                    st.error("Mobile Number is required.")
+                else:
+                    try:
+                        # Execute stored procedure to add a new customer
+                        result = execute_stored_procedure("AddNewCustomer", (first_name, last_name, age, mobile_number, email))
+                        if result:
+                            if len(result[0]) == 2:  # New customer created
+                                new_customer_id, message = result[0]
+                                st.success(f"{message}. Your Customer ID is: {new_customer_id}")
+                            elif len(result[0]) == 1:  # Customer already exists
+                                message = result[0][0]
+                                st.error(message)
+                            else:
+                                st.error("Unexpected database response.")
                         else:
-                            st.error("Unexpected database response.")
-                    else:
-                        st.error("No response from the database.")
-                except Exception as e:
-                    st.error(f"Error: {e}")
+                            st.error("No response from the database.")
+                    except Exception as e:
+                        st.error(f"Error: {e}")
 
     elif Choice == "Check Available Tables":
         st.subheader("Check Available Tables")
